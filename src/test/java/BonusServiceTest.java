@@ -34,11 +34,11 @@ class BonusServiceTest {
         assertEquals(expected, actual);
     }
     @org.junit.jupiter.api.Test
-    void shouldCalculateForRegisteredAndUnderLimit() {
+    void shouldCalculateForRegisteredAndLessLimit() {
         BonusService service = new BonusService();
 
         // подготавливаем данные:
-        long amount = 1_00_60;
+        long amount = 1_60;
         boolean registered = true;
         long expected = 3;
 
